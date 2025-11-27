@@ -10,24 +10,31 @@ if(!isset($_SESSION['status']) && basename($_SERVER['PHP_SELF']) != 'login.php')
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Umbah Umbah Laundry</title>
+    <title>PIKUCEK! Laundry</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
     
-    <style>
-        body { font-family: 'Poppins', sans-serif; background-color: #f4f7f6; }
+  <style>
+        body { font-family: 'Poppins', sans-serif; background-color: #f8f9fa; }
         
-        /* Desain Navbar Gradasi Keren */
+        /* TEMA BARU: Professional Midnight Blue */
         .navbar {
-            background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+            /* Gradasi Gelap Elegan */
+            background: linear-gradient(90deg, #000428 0%, #004e92 100%); 
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 20px;
         }
         
-        /* Efek Kartu Dashboard */
-        .card { border: none; border-radius: 15px; transition: transform 0.3s; }
-        .card:hover { transform: translateY(-5px); }
+        /* Logo Putih agar kontras dengan background gelap */
+        .navbar-brand { font-weight: 800; font-size: 24px; font-style: italic; color: #fff !important; }
+        
+        /* Menu Link Putih Transparan */
+        .nav-link { font-weight: 500; color: rgba(255,255,255,0.8) !important; }
+        .nav-link:hover { color: #fff !important; }
+
+        .card-dashboard { border: none; border-radius: 15px; transition: transform 0.3s; }
+        .card-dashboard:hover { transform: translateY(-5px); }
     </style>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -36,9 +43,12 @@ if(!isset($_SESSION['status']) && basename($_SERVER['PHP_SELF']) != 'login.php')
 </head>
 <body class="bg-light">
 
-<nav class="navbar navbar-expand-lg navbar-dark shadow mb-4 p-3">
+<nav class="navbar navbar-expand-lg navbar-light shadow mb-4 p-3">
   <div class="container">
-    <a class="navbar-brand fw-bold" href="index.php"><i class="fas fa-soap"></i> UMBAH UMBAH</a>
+    <a class="navbar-brand fw-bold fst-italic" href="index.php" style="font-weight: 800; font-size: 24px;">
+        <i class="fas fa-soap"></i> PIKUCEK!
+    </a>
+    
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
